@@ -1,4 +1,6 @@
 .advantage {
+  position: relative;
+  z-index: 1;
 
   @media (min-width: 1440px) {
     grid-column: 1 / 2;
