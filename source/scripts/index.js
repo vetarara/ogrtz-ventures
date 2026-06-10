@@ -21,8 +21,8 @@ titleElement.textContent = title;
 
 listElement.innerHTML = advantages
   .map((item) => `
-    <li class="advantage-card advantage-card--${item.modifier}">
-      <h3 class="advantage__title">${item.title}</h3>
+    <li class="advantages__item advantage">
+      <h3 class="advantage__title advantage__title--${item.modifier}">${item.title}</h3>
       <p class="advantage__description">${item.text}</p>
     </li>
   `)

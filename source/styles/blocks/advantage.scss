@@ -1,0 +1,90 @@
+.advantage {
+
+  @media (min-width: 1440px) {
+    grid-column: 1 / 2;
+
+    &:nth-child(even) {
+      grid-column: 3 / 4;
+    }
+  }
+}
+
+.advantage__title {
+  position: relative;
+  margin: 0;
+  padding: 24px 0 15px 58px;
+  text-align: right;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  line-height: 32px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+  }
+
+   @media (min-width: 768px) {
+    text-transform: uppercase;
+   }
+
+  &--advising::before,
+  &--value::before {
+    background:
+      image-set(url("../../images/advantages-icons/like@2x.webp") type("image/webp") 2x,
+      url("../../images/advantages-icons/like@1x.webp") type("image/webp") 1x,
+      url("../../images/advantages-icons/like@2x.png") type("image/png") 2x,
+      url("../../images/advantages-icons/like@1x.png") type("image/png") 1x)
+      center
+      no-repeat;
+  }
+
+  &--diversity::before,
+  &--research::before {
+    background:
+      image-set(url("../../images/advantages-icons/part@2x.webp") type("image/webp") 2x,
+      url("../../images/advantages-icons/part@1x.webp") type("image/webp") 1x,
+      url("../../images/advantages-icons/part@2x.png") type("image/png") 2x,
+      url("../../images/advantages-icons/part@1x.png") type("image/png") 1x)
+      center
+      no-repeat;
+  }
+
+  &--team::before,
+  &--community-mobile::before {
+    background:
+      image-set(url("../../images/advantages-icons/man@2x.webp") type("image/webp") 2x,
+      url("../../images/advantages-icons/man@1x.webp") type("image/webp") 1x,
+      url("../../images/advantages-icons/man@2x.png") type("image/png") 2x,
+      url("../../images/advantages-icons/man@1x.png") type("image/png") 1x)
+      center
+      no-repeat;
+  }
+
+  &--marketing::before,
+  &--community-desktop::before {
+    background:
+      image-set(url("../../images/advantages-icons/earth@2x.webp") type("image/webp") 2x,
+      url("../../images/advantages-icons/earth@1x.webp") type("image/webp") 1x,
+      url("../../images/advantages-icons/earth@2x.png") type("image/png") 2x,
+      url("../../images/advantages-icons/earth@1x.png") type("image/png") 1x)
+      center
+      no-repeat;
+  }
+}
+
+.advantage__description {
+  font-size: 16px;
+  line-height: 32px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}

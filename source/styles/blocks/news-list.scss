@@ -1,0 +1,36 @@
+.news-list {
+  padding: 16px;
+}
+
+.news-list__title {
+  margin: 0;
+  padding-left: 7px;
+  font-size: 32px;
+  line-height: 72px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.news-list__mobile {
+  padding: 25px 0 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.news-list__desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 32px;
+  }
+
+}

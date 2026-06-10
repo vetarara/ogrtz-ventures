@@ -1,0 +1,7 @@
+.main-header__logo {
+  display: none;
+
+  @media (min-width: 768px) {
+    @include link;
+  }
+}
