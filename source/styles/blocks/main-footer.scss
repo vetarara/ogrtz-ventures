@@ -8,6 +8,11 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
   }
+
+  @media (min-width: 1440px) {
+    padding: 60px 0;
+    gap: 118px;
+  }
 }
 
 .main-footer__contacts {
@@ -15,12 +20,21 @@
     grid-column: 1 / 2;
     max-width: 340px;
   }
+
+  @media (min-width: 1440px) {
+    max-width: 354px;
+  }
 }
 
 .main-footer__social {
   @media (min-width: 768px) {
     grid-column: 3 / 4;
     max-width: 410px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 452px;
+    margin-right: 100px;
   }
 }
 

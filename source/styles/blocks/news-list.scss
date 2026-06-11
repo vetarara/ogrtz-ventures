@@ -1,5 +1,9 @@
 .news-list {
   padding: 16px;
+
+  @media (min-width: 1440px) {
+    padding: 16px 0;
+  }
 }
 
 .news-list__title {
@@ -17,7 +21,7 @@
 }
 
 .news-list__mobile {
-  padding: 25px 0 43px;
+  padding-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;

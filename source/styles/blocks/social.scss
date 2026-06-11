@@ -1,5 +1,5 @@
 .social__title {
-  margin: 0;
+  margin: 0 0 8px;
   font-size: 32px;
   line-height: 72px;
 
@@ -22,6 +22,7 @@
 
 .social__list {
   @include list-reset;
+  margin-bottom: 13px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -83,6 +84,7 @@
   &:hover,
   &:focus-visible {
     outline: none;
+    background-color: rgba(178, 231, 254, 0.1);
   }
 
   &:hover::before,

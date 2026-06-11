@@ -35,6 +35,12 @@
     margin: 0 auto;
     max-width: 1440px;
   }
+
+  @media (min-width: 1880px) {
+    &::after {
+      top: -60px;
+    }
+  }
 }
 
 .page__hero {
@@ -42,7 +48,7 @@
   max-width: 282px;
 
   @media (min-width: 1440px) {
-    margin-bottom: 216px;
+    margin-bottom: 262px;
     max-width: 1440px;
   }
 }
