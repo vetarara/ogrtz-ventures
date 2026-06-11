@@ -40,7 +40,7 @@
   </header>
   <main class="page__main">
 
-    <section class="hero">
+    <section class="page__hero hero">
       <picture class="hero__image-wrapper">
         <source width="348" height="158" type="image/webp" media="(min-width: 1440px)" srcset="images/hero/ogrtz-ventures-desktop@1x.webp 1x, images/hero/ogrtz-ventures-desktop@2x.webp 2x">
         <source type="image/webp" srcset="images/hero/ogrtz-ventures-mobile@1x.webp 1x, images/hero/ogrtz-ventures-mobile@1x.webp 2x">
@@ -48,7 +48,7 @@
         <img class="hero__image" src="images/hero/ogrtz-ventures-mobile@1x.png" srcset="images/heroogrtz-ventures-mobile@2x.png 2x" width="282" height="140" alt="OGTRZ Ventures">
       </picture>
       <h1 class="hero__title">Private Venture Crypto Investment Community</h1>
-      <a class="hero__selection" href="#">Get in touch</a>
+      <a class="hero__link" href="#">Get in touch</a>
     </section>
 
     <section class="page__advantages advantages">
@@ -196,13 +196,16 @@
   <footer class="page__footer main-footer">
     <div class="main-footer__contacts contacts">
       <h2 class="contacts__title">Get in touch</h2>
-      <p>Would you like to introduce your project to our community?</p>
-      <a href="#" target="_blank" rel="noreferrer noopener">Send message to Telegram</a>
-      <a href="mailto:OGRTZ_Ventures@gmail.com">E-mail: OGRTZ_Ventures@gmail.com</a>
+      <div class="contacts__wrapper">
+        <p class="contacts__text">Would you like to introduce your project to our community?</p>
+        <a class="contacts__link-telegram" href="#" target="_blank" rel="noreferrer noopener">Send message to Telegram</a>
+        <a class="contacts__link-mail" href="mailto:OGRTZ_Ventures@gmail.com"><span>E-mail:</span> OGRTZ_Ventures@gmail.com</a>
+      </div>
+
     </div>
     <div class="main-footer__social social">
       <h2 class="social__title">Social media</h2>
-      <p>We invest in innovative crypto projects at early stage of development</p>
+      <p class="social__text">We invest in innovative crypto projects at early stage of development</p>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--telegram" href="#">

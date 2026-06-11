@@ -1,11 +1,67 @@
+.page__header {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    min-height: 785px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:
+      image-set(url("../../images/hero/cucumbers-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/hero/cucumbers-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/hero/cucumbers-mobile@2x.png") type("image/png") 2x,
+      url("../../images/hero/cucumbers-mobile@1x.png") type("image/png") 1x)
+      center
+      no-repeat;
+    background-size: cover;
+    z-index: -2;
+  }
+
+  @media (min-width: 398px) {
+    &::after {
+      background:
+        image-set(url("../../images/hero/cucumbers-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/hero/cucumbers-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/hero/cucumbers-desktop@2x.png") type("image/png") 2x,
+        url("../../images/hero/cucumbers-desktop@1x.png") type("image/png") 1x)
+        center
+        no-repeat;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+
+.page__hero {
+  margin: 0 auto;
+  max-width: 282px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 216px;
+    max-width: 1440px;
+  }
+}
+
 .page__advantages {
   @media (min-width: 1440px) {
-    margin: 0 auto 300px;
+    margin: 0 auto 284px;
     max-width: 1440px;
   }
 }
 
 .page__news-list {
+  @media (min-width: 1440px) {
+    margin: 0 auto 42px;
+    max-width: 1440px;
+  }
+}
+
+.page__footer {
   @media (min-width: 1440px) {
     margin: 0 auto;
     max-width: 1440px;

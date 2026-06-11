@@ -1,0 +1,7 @@
+.logo {
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+}
