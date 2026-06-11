@@ -45,7 +45,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    padding: 0.5px;
+    padding: 1px;
     border-radius: inherit;
 
     background:
@@ -80,6 +80,20 @@
     background-repeat: no-repeat;
   }
 
+  &:hover,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    padding: 2px;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
   &--telegram::after {
     background-image: url("../../icons/stack.svg#telegram-blue");
   }
@@ -99,7 +113,7 @@
 .social__link span {
   font-size: 18px;
   line-height: 32px;
-  background: linear-gradient(257.59deg, #03cf54 2.41%, #04ff96 100%);
+  background: linear-gradient(257.59deg, var(--color-gradient-primary) 2.41%, var(--color-gradient-secondary) 100%);
   background-clip: text;
   color: transparent;
 }

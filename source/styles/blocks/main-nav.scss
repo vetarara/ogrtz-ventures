@@ -62,7 +62,7 @@
     justify-self: end;
     font-size: 18px;
     line-height: 100%;
-    background: linear-gradient(257.59deg, #03cf54 2.41%, #04ff96 100%);
+    background: linear-gradient(257.59deg, var(--color-gradient-primary) 2.41%, var(--color-gradient-secondary) 100%);
     background-clip: text;
     color: transparent;
     border-radius: 16px;
@@ -70,7 +70,7 @@
 
     &:hover,
     &:focus-visible {
-      outline: 2px solid #1dd161;
+      outline: 2px solid var(--color-accent);
       box-shadow: 0 0 54px 0px rgba(4, 249, 140, 0.4);
     }
 
@@ -82,6 +82,7 @@
 
 .main-nav--opened {
   position: fixed;
+  height: 100vh;
   inset: 0;
   padding-right: 24px;
   background-color: #1f322f;
@@ -143,7 +144,7 @@
 
   .main-nav__list {
     @include list-reset;
-    height: 100vh;
+    height: 100%;
     overflow-y: auto;
   }
 }

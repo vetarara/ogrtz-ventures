@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -18,4 +22,8 @@ body {
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-base);
   font-size: 16px;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }

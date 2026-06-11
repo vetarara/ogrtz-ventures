@@ -49,4 +49,14 @@
   line-height: 100%;
   border-radius: 16px;
   box-shadow: 0 0 54px 0px rgba(4, 249, 140, 0.4);
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    background: linear-gradient(257.59deg, var(--color-gradient-primary) 2.41%, var(--color-gradient-secondary) 100%);
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }

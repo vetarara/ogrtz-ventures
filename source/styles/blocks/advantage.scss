@@ -20,7 +20,7 @@
   font-size: 24px;
   line-height: 32px;
 
-  &::before {
+  &::after {
     content: "";
     display: block;
     width: 48px;
@@ -29,8 +29,26 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    background-repeat: no-repeat;
+    background:
+      url("../../images/advantages/icon-background.png")
+      center
+      no-repeat;
     border-radius: 16px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    background:
+      center
+      no-repeat;
+    z-index: 1;
   }
 
   @media (min-width: 768px) {
@@ -39,46 +57,22 @@
 
   &--advising::before,
   &--value::before {
-    background:
-      image-set(url("../../images/advantages-icons/like@2x.webp") type("image/webp") 2x,
-      url("../../images/advantages-icons/like@1x.webp") type("image/webp") 1x,
-      url("../../images/advantages-icons/like@2x.png") type("image/png") 2x,
-      url("../../images/advantages-icons/like@1x.png") type("image/png") 1x)
-      center
-      no-repeat;
+    background-image: url("../../icons/stack.svg#like");
   }
 
   &--diversity::before,
   &--research::before {
-    background:
-      image-set(url("../../images/advantages-icons/part@2x.webp") type("image/webp") 2x,
-      url("../../images/advantages-icons/part@1x.webp") type("image/webp") 1x,
-      url("../../images/advantages-icons/part@2x.png") type("image/png") 2x,
-      url("../../images/advantages-icons/part@1x.png") type("image/png") 1x)
-      center
-      no-repeat;
+    background-image: url("../../icons/stack.svg#part");
   }
 
   &--team::before,
   &--community-mobile::before {
-    background:
-      image-set(url("../../images/advantages-icons/man@2x.webp") type("image/webp") 2x,
-      url("../../images/advantages-icons/man@1x.webp") type("image/webp") 1x,
-      url("../../images/advantages-icons/man@2x.png") type("image/png") 2x,
-      url("../../images/advantages-icons/man@1x.png") type("image/png") 1x)
-      center
-      no-repeat;
+    background-image: url("../../icons/stack.svg#man");
   }
 
   &--marketing::before,
   &--community-desktop::before {
-    background:
-      image-set(url("../../images/advantages-icons/earth@2x.webp") type("image/webp") 2x,
-      url("../../images/advantages-icons/earth@1x.webp") type("image/webp") 1x,
-      url("../../images/advantages-icons/earth@2x.png") type("image/png") 2x,
-      url("../../images/advantages-icons/earth@1x.png") type("image/png") 1x)
-      center
-      no-repeat;
+    background-image: url("../../icons/stack.svg#earth");
   }
 }
 

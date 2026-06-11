@@ -18,6 +18,22 @@
   gap: 18px;
   text-decoration: none;
   color: var(--color-secondary);
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:hover .news__title,
+  &:focus-visible .news__title {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
+  }
+
+  &:active .news__title {
+    opacity: 0.8;
+  }
 }
 
 .news__image-wrapper {
@@ -43,7 +59,7 @@
 
 .news__date {
   margin: 0;
-  background: linear-gradient(257.59deg, #03cf54 2.41%, #04ff96 100%);
+  background: linear-gradient(257.59deg, var(--color-gradient-primary) 2.41%, var(--color-gradient-secondary) 100%);
   background-clip: text;
   color: transparent;
 

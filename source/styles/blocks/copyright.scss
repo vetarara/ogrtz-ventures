@@ -3,9 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
+  line-height: 32px;
 
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+    font-size: 20px;
   }
 }
